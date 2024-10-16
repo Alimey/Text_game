@@ -52,6 +52,47 @@ II Реализуемый функционал
 
 III Архитектура
 
-class Window:
-  Класс, отвечающий за создание игрового окна.
+(1) Classes:
+  Window - класс, отвечающий за игровое окно
+  TextDisplayer - класс, отвечающий за вывод текста
+  ProgressChecker - класс, отвечающий за динамику игры
+  ChoiceButtons - класс, отвечающий за кнопки
+
+(2) Window
+
+Attributes:
+  root
+  progress_checker
+  buttons
+  text_displayer
+
+Methods:
+  __init__
+  __create_base
+  start
+
+(3) Text
+
+Attributes:
+  root
+  frame
+  messages
+
+Methods:
+  __init__
+  __play_message
+  add_message
+
+(4) Buttons
+
+Attributes:
+  frame
+  buttons
+  progress_checker
+
+Methods:
+  __init__
+  __generate_buttons
+  __pack_all
+  upload
   
