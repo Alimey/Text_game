@@ -50,7 +50,7 @@ class Window:
     """Альтернатива методу mainloop из tkinter
     Выводит на начальный экран сообщение и ожидает нажатия любой клавиши для старта
     """
-    self.__text_displayer.add_message("Нажмите любую клавишу для начала игры", False)
+    self.__text_displayer.add_message(START_MESSAGE, False)
     self.__root.bind('<Key>', self.__start_messaging)
     self.__root.mainloop()
   
